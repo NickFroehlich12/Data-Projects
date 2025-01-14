@@ -55,7 +55,6 @@ ON CTA.dbo.products.category_id = CTA.dbo.categories.category_id
 
 GROUP BY category_name
 
---- I was unable to figure out how to have total products and products to be reorderd in the same query
 --- I made two queries to find one with all the products in the category and one with the total number of products to be reordered
 
 --- Question 5 Rank each of the customers by number of orders. Make sure to list customer name.
@@ -68,8 +67,6 @@ LEFT JOIN CTA.dbo.orders
 ON CTA.dbo.customers.customer_id = CTA.dbo.orders.customer_id
 
 GROUP BY first_name
-
---- Could not figure out CONCAT function for name, after this would be figured out, you sort Total_orders by decsending
 
 
 --- Question 6 List all customers who ordered from multiple stores
